@@ -10,4 +10,8 @@ class Artist
   def songs
     @song_list
   end
+  
+  def add_song(song)
+    song = Song.new(title)
+    song.artist = self.name
 end
