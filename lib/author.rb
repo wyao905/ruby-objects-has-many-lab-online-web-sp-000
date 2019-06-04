@@ -26,7 +26,7 @@ class Author
   
   def self.post_count
     count = 0
-    @@authors.each {|author| count += authors.songs.length}
+    @@authors.each {|author| count += author.posts.length}
     count
   end
 end
