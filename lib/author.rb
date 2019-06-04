@@ -21,12 +21,12 @@ class Author
   def add_post_by_name(post_name)
     posting = Post.new(post_name)
     posting.artist = self
-    songs << song
+    posts << posting
   end
   
-  def self.song_count
+  def self.post_count
     count = 0
-    @@artists.each {|artist| count += artist.songs.length}
+    @@authors.each {|author| count += authors.songs.length}
     count
   end
 end
